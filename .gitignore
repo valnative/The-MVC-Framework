@@ -1,0 +1,4 @@
+.idea
+/vendor/
+logs
+.php-cs-fixer.cache
