@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
+
+body {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  overflow-x: hidden;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+header, footer {
+  background-color: #f0f0f0;
+  color: #6d6d6d;
+  padding: 25px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #eaeff3;
+}
+
+.footer a {
+  color: #2c2d33;
+  text-decoration: underline;
+}
+
+.btn-welcome {
+  margin-bottom: 20px;
+  background: #333333;
+}
+
+.container-form {
+  position: relative;
+  margin: 25px auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.form-login > label > input {
+  width: 300px;
+  padding: 10px 20px;
+  margin-top: 16px;
+  background: #F8F8F8;
+  border-radius: 3px;
+  border: 2px solid orange;
+}
+
+.btn-login {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 200px;
+  color: white;
+  background: #333333;
+}
+
+

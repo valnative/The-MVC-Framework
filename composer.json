@@ -1,0 +1,20 @@
+{
+  "name": "valnative/nix-project",
+  "description": "The MVC PHP framework for creating an online shop",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Framework\\": "framework/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Valerii Yevdochenko",
+      "email": "valerii.yevdochenko@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.6",
+    "friendsofphp/php-cs-fixer": "^3.4"
+  }
+}
