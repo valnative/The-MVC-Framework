@@ -1,0 +1,630 @@
+[15-Dec-2021 23:10:35] ERROR: Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, TypeError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php at line 25 Stack trace: Array
+(
+    [0] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 110
+            [function] => printErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, TypeError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [1] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 93
+            [function] => writeErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, TypeError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [2] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 22
+            [function] => fatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [function] => customFatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+)
+
+[15-Dec-2021 23:10:36] ERROR: Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, TypeError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php at line 25 Stack trace: Array
+(
+    [0] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 110
+            [function] => printErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, TypeError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [1] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 93
+            [function] => writeErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, TypeError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [2] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 22
+            [function] => fatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [function] => customFatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+)
+
+[15-Dec-2021 23:11:43] ERROR: Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php at line 25 Stack trace: Array
+(
+    [0] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 110
+            [function] => printErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [1] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 93
+            [function] => writeErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [2] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 22
+            [function] => fatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [function] => customFatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+)
+
+[15-Dec-2021 23:11:51] ERROR: Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php at line 25 Stack trace: Array
+(
+    [0] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 110
+            [function] => printErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [1] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 93
+            [function] => writeErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [2] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 22
+            [function] => fatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [function] => customFatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+)
+
+[15-Dec-2021 23:12:16] ERROR: Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php at line 25 Stack trace: Array
+(
+    [0] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 110
+            [function] => printErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [1] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 93
+            [function] => writeErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [2] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 22
+            [function] => fatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [function] => customFatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+)
+
+[15-Dec-2021 23:12:27] ERROR: Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, Error given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php at line 25 Stack trace: Array
+(
+    [0] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 110
+            [function] => printErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, Error given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [1] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 93
+            [function] => writeErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, Error given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [2] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 22
+            [function] => fatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [function] => customFatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+)
+
+[15-Dec-2021 23:12:34] ERROR: Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php at line 25 Stack trace: Array
+(
+    [0] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 110
+            [function] => printErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [1] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 93
+            [function] => writeErrorLog
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                    [0] => ERROR
+                    [1] => Uncaught TypeError: CustomErrorHandler::exceptionErrorHandler(): Argument #1 ($exception) must be of type Exception, ParseError given in /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php:25
+Stack trace:
+#0 [internal function]: CustomErrorHandler->exceptionErrorHandler()
+#1 {main}
+  thrown
+                    [2] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+                    [3] => 25
+                )
+
+        )
+
+    [2] => Array
+        (
+            [file] => /home/valerii/Projects/nix-project/classes/CustomErrorHandler.php
+            [line] => 22
+            [function] => fatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+    [3] => Array
+        (
+            [function] => customFatalErrorHandler
+            [class] => CustomErrorHandler
+            [object] => CustomErrorHandler Object
+                (
+                )
+
+            [type] => ->
+            [args] => Array
+                (
+                )
+
+        )
+
+)
+
