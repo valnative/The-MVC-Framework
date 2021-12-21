@@ -9,85 +9,81 @@
   <title>Card | V-SHOP</title>
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <header class="header">
-        <div class="navbar">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-              <li><a class="nav-link" href="index.html">Home</a></li>
-              <li><a class="nav-link" href="shop.html">Shop</a></li>
-              <li><a class="nav-link" href="product.html">Product</a></li>
-              <li><a class="nav-link" href="login.html">My account</a></li>
-              <li><a class="nav-link" href="card.html">Card</a></li>
-              <li><a class="nav-link" href="checkout.html">Checkout</a></li>
-            </ul>
-          </nav>
-          <div class="search">
-            <form class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-4">
-              <input class="form-control" type="text"
-                     placeholder="Search products ..." aria-label="Search">
-            </form>
+<div class="container-fluid vh-100 d-flex flex-column">
+  <header class="header">
+    <div class="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="shop.html">Shop</a></li>
+          <li><a class="nav-link" href="product.html">Product</a></li>
+          <li><a class="nav-link" href="login.html">My account</a></li>
+          <li><a class="nav-link" href="card.html">Card</a></li>
+          <li><a class="nav-link" href="checkout.html">Checkout</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <form class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-4">
+          <input class="form-control" type="text"
+                 placeholder="Search products ..." aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </header>
+  <main class="flex-fill main px-5 px-lg-5 mt-5">
+    <table class="table cart-table">
+      <i class="bi bi-x-circle-fill"></i>
+      <thead>
+      <tr>
+        <th scope="col" class="product-remove">&nbsp;</th>
+        <th scope="col" class="product-thumbnail">&nbsp;</th>
+        <th scope="col" class="product-name">Product</th>
+        <th scope="col" class="product-price">Price</th>
+        <th scope="col" class="product-quantity">Quantity</th>
+        <th scope="col" class="product-subtotal">Subtotal</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <tr>
+        <td class="product-remove"><a href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+               class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
+          </svg>
+        </a>
+        </td>
+        <td class="product-thumbnail">
+          <a href="#"><img width="120" height="120" src="img/vneck-tee.jpg"
+                           sizes="(max-width: 324px) 100vw, 324px" alt="Vneck"></a>
+        </td>
+        <td class="product-name">
+          <a href="#">Vneck Tshirt</a></td>
+        <td class="product-price"><span>₴25</span></td>
+        <td class="product-quantity">
+          <div class="quantity">
+            <label>Vneck Tshirt quantity</label>
+            <input type="number" step="1" min="0" max=""
+                   value="1" title="Qty" size="4" placeholder=""
+                   inputmode="numeric">
           </div>
-        </div>
-      </header>
-      <main class="main px-5 px-lg-5 mt-5">
-        <table class="table cart-table">
-          <i class="bi bi-x-circle-fill"></i>
-          <thead>
-          <tr>
-            <th scope="col" class="product-remove">&nbsp;</th>
-            <th scope="col" class="product-thumbnail">&nbsp;</th>
-            <th scope="col" class="product-name">Product</th>
-            <th scope="col" class="product-price">Price</th>
-            <th scope="col" class="product-quantity">Quantity</th>
-            <th scope="col" class="product-subtotal">Subtotal</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-          <tr>
-            <td class="product-remove"><a href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                   class="bi bi-x-circle-fill" viewBox="0 0 16 16">
-                <path
-                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-              </svg>
-            </a>
-            </td>
-            <td class="product-thumbnail">
-              <a href="#"><img width="120" height="120" src="img/vneck-tee.jpg"
-                               sizes="(max-width: 324px) 100vw, 324px" alt="Vneck"></a>
-            </td>
-            <td class="product-name">
-              <a href="#">Vneck Tshirt</a></td>
-            <td class="product-price"><span>₴25</span></td>
-            <td class="product-quantity">
-              <div class="quantity">
-                <label>Vneck Tshirt quantity</label>
-                <input type="number" step="1" min="0" max=""
-                       value="1" title="Qty" size="4" placeholder=""
-                       inputmode="numeric">
-              </div>
-            </td>
-            <td class="product-subtotal">
+        </td>
+        <td class="product-subtotal">
               <span><bdi>18,00&nbsp;<span
               >₴</span></bdi></span></td>
-          </tr>
-          </tbody>
-        </table>
-      </main>
-      <footer class="footer">
-        <div class="footer-content ms-lg-4">
-          <span>© 2021 V-SHOP</span>
-          <br>
-          <span>Designed by <a target="_blank" href="https://github.com/valnative"
-                               rel="noreferrer">Valerii Yevdochenko</a></span>
-        </div>
-      </footer>
+      </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer class="footer">
+    <div class="footer-content ms-lg-4">
+      <span>© 2021 V-SHOP</span>
+      <br>
+      <span>Designed by <a target="_blank" href="https://github.com/valnative"
+                           rel="noreferrer">Valerii Yevdochenko</a></span>
     </div>
-  </div>
+  </footer>
 </div>
 <script src="js/bootstrap.bundle.js"></script>
 </body>
