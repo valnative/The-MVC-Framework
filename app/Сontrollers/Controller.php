@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use Framework\View;
+
 class Controller
 {
     public $view;

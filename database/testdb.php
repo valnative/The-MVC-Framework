@@ -4,8 +4,8 @@ $catalog = array(
     "beanie" => array(
         "id" => 1,
         "name" => "Beanie",
-        "price" => "10.00",
-        "photo" => "assets/img/beanie-324x324.jpg"
+        "price" => "18.00",
+        "photo" => "path_to_img"
     ),
 
     "belt" => array(

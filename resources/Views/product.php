@@ -1,16 +1,13 @@
-<main class="main px-4 px-lg-5 mt-5">
+<main class="flex-fill main px-4 px-lg-5 mt-5">
   <div class="card mb-3">
     <div class="row g-0">
       <div class="col-md-4">
-        <img src="<?php
-        echo $value['photo'] ?>" class="img-fluid rounded-start" alt="...">
+        <img width="324" height="324" src="img/beanie.jpg" class="img-fluid rounded-start" alt="...">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <p class="price"><span>$</span><span><?php
-                  echo $value['price'] ?></span></p>
-          <h5 class="card-title"><?php
-              echo $value['name'] ?></h5>
+          <p class="price"><span>$</span><span>18.00</span></p>
+          <h5 class="card-title">Bean</h5>
           <p class="card-text">Description</p>
           <form class="cart">
             <div class="quantity">

@@ -1,4 +1,4 @@
-<main class="main px-4 px-lg-5 mt-5 mb-5">
+<main class="flex-fill main px-4 px-lg-5 mt-5 mb-5">
   <div class="section">
     <div class="content">
       <h2>Welcome to V-SHOP</h2>

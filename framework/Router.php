@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Framework;
+namespace Framework;
 
 use App\Controllers\HomeController;
 use App\Controllers\ShopController;
 
-class Route
+class Router
 {
     public static function run(): array
     {

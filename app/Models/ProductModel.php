@@ -2,7 +2,9 @@
 
 namespace App\Models;
 
-require_once APP_ROOT . 'database/testdb.php';
+use JetBrains\PhpStorm\Pure;
+
+require_once APP_ROOT.'database/testdb.php';
 
 class ProductModel
 {
@@ -12,8 +14,8 @@ class ProductModel
     public string $photo;
 
     /**
-     * @param array $catalog
-     * @param int $productId
+     * @param  array  $catalog
+     * @param  int  $productId
      * @return $this
      */
 
@@ -29,5 +31,23 @@ class ProductModel
             }
         }
         return $this;
+    }
+
+    /**
+     * @param  array  $catalog
+     * @return array
+     */
+    public function getCatalog(array $catalog): array
+    {
+        $products = [];
+        foreach ($catalog as $item) {
+            $product = new self();
+            $product->id = $item['id'];
+            $product->name = $item['name'];
+            $product->price = $item['price'];
+            $product->photo = $item['photo'];
+            $products[] = $product;
+        }
+        return $products;
     }
 }
