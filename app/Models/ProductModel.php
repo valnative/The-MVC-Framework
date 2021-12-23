@@ -2,8 +2,6 @@
 
 namespace App\Models;
 
-use JetBrains\PhpStorm\Pure;
-
 require_once APP_ROOT.'database/testdb.php';
 
 class ProductModel

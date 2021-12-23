@@ -1,9 +1,7 @@
 <?php
 
-use Framework\Route;
-
-echo "Bootstrap1";
+use Framework\Router;
 
 require_once __DIR__.'/config.php';
 
-\App\Framework\Router::run();
+Router::run();
