@@ -2,8 +2,6 @@
 
 namespace App\Models;
 
-require_once APP_ROOT.'database/testdb.php';
-
 class ProductModel
 {
     public int $id;

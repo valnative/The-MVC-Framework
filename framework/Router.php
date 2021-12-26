@@ -25,13 +25,14 @@ class Router
      * @return array
      */
     private static function getRoutes(): array
+
     {
         return array(
+            'product/(\w+)(((?!//).)*)' => [ProductController::class, 'actionProduct/$0'],
+            'shop' => [ProductController::class, 'actionShop'],
             '' => [HomeController::class, 'indexAction'],
-            'shop' => [ShopController::class, 'actionShop'],
-            'account' => [AccountController::class, 'actionAccount'],
             'card' => [CardController::class, 'actionCard'],
-            'product/([a-z0-9-]+)' => [ProductController::class, 'actionProduct/$1'],
+            'account(((?!//).)*)' => [AccountController::class, 'actionAccount/$0'],
         );
     }
 
@@ -54,11 +55,30 @@ class Router
     private static function getController(array $map, ?string $uri): void
     {
         foreach ($map as $route => $controllers) {
-            if (preg_match("~^$route$~", $uri)) {
-                $controllerName = array_shift($controllers);
-                $controllerAction = array_pop($controllers);
+            $pattern = "~^$route$~";
+
+            if (preg_match($pattern, $uri, $match)) {
+                var_dump($match);
+                $controllerName = $controllers[0];
+                var_dump($uri);
+                var_dump($pattern);
+                var_dump($controllers[1]);
+
+
+
+                $internalRoute = preg_replace($pattern, $controllers[1], $uri);
+
+                var_dump($internalRoute);
+                $segments = explode('/', $internalRoute);
+                var_dump($segments);
+                $controllerAction = array_shift($segments);
+                var_dump($controllerAction);
+                $parameters = $segments;
+                var_dump($parameters);
+
                 $controller = new $controllerName();
-                $controller->$controllerAction();
+//                $result = $controller->$controllerAction($parameters);
+                $result = call_user_func_array([$controller, $controllerAction], $parameters);
             }
         }
     }
