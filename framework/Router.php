@@ -6,7 +6,6 @@ use App\Controllers\AccountController;
 use App\Controllers\CardController;
 use App\Controllers\HomeController;
 use App\Controllers\ProductController;
-use App\Controllers\ShopController;
 
 
 class Router
@@ -28,11 +27,11 @@ class Router
 
     {
         return array(
-            'product/(\w+)(((?!//).)*)' => [ProductController::class, 'actionProduct/$0'],
-            'shop' => [ProductController::class, 'actionShop'],
+            'product/(\w+)(((?!//).)*)' => [ProductController::class, 'actionProduct/$1$2'],
+            'shop' => [ProductController::class, 'actionCatalog'],
             '' => [HomeController::class, 'indexAction'],
             'card' => [CardController::class, 'actionCard'],
-            'account(((?!//).)*)' => [AccountController::class, 'actionAccount/$0'],
+            'account' => [AccountController::class, 'actionAccount'],
         );
     }
 
@@ -57,28 +56,24 @@ class Router
         foreach ($map as $route => $controllers) {
             $pattern = "~^$route$~";
 
-            if (preg_match($pattern, $uri, $match)) {
-                var_dump($match);
+            if (preg_match($pattern, $uri)) {
                 $controllerName = $controllers[0];
-                var_dump($uri);
-                var_dump($pattern);
-                var_dump($controllers[1]);
-
-
 
                 $internalRoute = preg_replace($pattern, $controllers[1], $uri);
 
-                var_dump($internalRoute);
                 $segments = explode('/', $internalRoute);
-                var_dump($segments);
+
                 $controllerAction = array_shift($segments);
-                var_dump($controllerAction);
+
                 $parameters = $segments;
-                var_dump($parameters);
 
                 $controller = new $controllerName();
-//                $result = $controller->$controllerAction($parameters);
+
                 $result = call_user_func_array([$controller, $controllerAction], $parameters);
+
+                if ($result !== null) {
+                    break;
+                }
             }
         }
     }

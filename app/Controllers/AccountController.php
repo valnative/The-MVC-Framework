@@ -8,8 +8,7 @@ class AccountController extends Controller
 {
     public function actionAccount(): bool
     {
-        echo "AccountController ==> actionAccount" ;
+        echo "AccountController ==> actionAccount";
         return true;
-//        View::render('account.php', 'template.php');
     }
 }

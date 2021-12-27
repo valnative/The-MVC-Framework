@@ -14,22 +14,20 @@ class ProductController extends Controller
         $this->model = new ProductModel();
     }
 
-    public function actionShop(): void
+    public function actionCatalog(): bool
     {
-        echo "ShopController => actionShop";
-//        $data = $this->model->getCatalog();
-//        View::render('shop.php', 'template.php', $data);
+        echo "ЭТО КОНТРОЛЛЕР - ProductController.  Вызывается ЭКШН -  actionCatalog"."<br>";
+        echo "All products";
+        return true;
     }
 
-    public function actionProduct(): void
+    public function actionProduct($name, $id): bool
     {
-        echo "ProductController => actionProduct";
+        echo "ЭТО КОНТРОЛЛЕР - ProductController.  Вызывается ЭКШН -  actionProduct"."<br>";
+        echo "One product";
 
-//        echo '<br>'.$id;
-//        echo '<br>'.$name;
-//        echo '<br>'.$category;
-//        echo '<br>'.$price;
-//        $data = $this->model->getProduct() ();
-//        View::render('product.php', 'template.php', $data);
+        echo '<br>'.$id;
+        echo '<br>'.$name;
+        return true;
     }
 }

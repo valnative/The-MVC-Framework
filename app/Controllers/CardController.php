@@ -11,10 +11,6 @@ class CardController extends Controller
     {
         echo "CardController => actionCard";
         return true;
-//        View::render('account.php', 'template.php');
     }
-//    public function cardAction(): void
-//    {
-//        View::render('account.php', 'template.php');
-//    }
+
 }
