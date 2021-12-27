@@ -9,7 +9,8 @@ class HomeController
 {
     public function indexAction(): bool
     {
-        echo "HomeController ==> indexAction";
-        return true;
+           echo "HomeController ==> indexAction";
+           return true;
+//        View::render('home.php', 'template.php');
     }
 }

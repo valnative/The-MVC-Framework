@@ -8,6 +8,8 @@ use Framework\View;
 
 class ProductController extends Controller
 {
+    public array $catalog = [];
+
     public function __construct()
     {
         parent::__construct();
@@ -16,6 +18,10 @@ class ProductController extends Controller
 
     public function actionCatalog(): bool
     {
+        $catalog = $this->model->getCatalog();
+        echo "<pre>";
+        print_r($catalog);
+        echo "<pre>";
         echo "ЭТО КОНТРОЛЛЕР - ProductController.  Вызывается ЭКШН -  actionCatalog"."<br>";
         echo "All products";
         return true;
@@ -25,7 +31,6 @@ class ProductController extends Controller
     {
         echo "ЭТО КОНТРОЛЛЕР - ProductController.  Вызывается ЭКШН -  actionProduct"."<br>";
         echo "One product";
-
         echo '<br>'.$id;
         echo '<br>'.$name;
         return true;

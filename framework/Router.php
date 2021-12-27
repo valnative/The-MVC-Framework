@@ -56,21 +56,14 @@ class Router
         foreach ($map as $route => $controllers) {
             $pattern = "~^$route$~";
 
-            if (preg_match($pattern, $uri)) {
+            if (preg_match($pattern, $uri, $match)) {
                 $controllerName = $controllers[0];
-
                 $internalRoute = preg_replace($pattern, $controllers[1], $uri);
-
                 $segments = explode('/', $internalRoute);
-
                 $controllerAction = array_shift($segments);
-
                 $parameters = $segments;
-
                 $controller = new $controllerName();
-
                 $result = call_user_func_array([$controller, $controllerAction], $parameters);
-
                 if ($result !== null) {
                     break;
                 }
