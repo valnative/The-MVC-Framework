@@ -5,20 +5,30 @@ namespace App\Controllers;
 use App\Models\ProductModel;
 use Framework\View;
 
-class ProductController
+class ProductController extends Controller
 {
-    public function actionCatalog(): bool
+    public function __construct()
     {
-        echo 'ProductController => actionCatalog';
-        return true;
+        parent::__construct();
+        $this->model = new ProductModel();
     }
 
-    public function actionProduct($arg1, $arg2, $arg3)
+    public function actionCatalog(): array
     {
-        echo 'ProductController => actionProduct';
-        echo '<br>First parameter: ' . $arg1;
-        echo '<br>Second parameter: ' . $arg2;
-        echo '<br>Third parameter: ' . $arg3;
-        return true;
+        $catalog = $this->model->getCatalog();
+        echo "<pre>";
+        print_r($catalog);
+        echo "<pre>";
+        return $catalog;
     }
+
+    public function actionProduct(int $id): ProductModel
+    {
+        $oneProduct = $this->model->getProduct($id);
+        echo "<pre>";
+        print_r($oneProduct);
+        echo "<pre>";
+        return $oneProduct;
+    }
+
 }

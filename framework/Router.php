@@ -58,19 +58,10 @@ class Router
             $uriPattern = "~^$route$~";
             if (preg_match($uriPattern, $uri)) {
                 [$controllerName, $action] = $controller;
-                echo '<br>Где ищем (запрос, который набрал пользователь): ' . $uri;
-                echo '<br>Что ищем (совпадение из правила): ' . $uriPattern;
-                echo '<br>Кто обрабатывает: ' . $action;
-
                 $internalRoute = preg_replace($uriPattern, $action, $uri);
-                var_dump($internalRoute);
-
                 $segments = explode('/', $internalRoute);
-                var_dump($segments);
                 $actionName = 'action' . ucfirst(array_shift($segments));
-                var_dump($actionName);
                 $parameters = $segments;
-                var_dump($parameters);
                 return [new $controllerName(), $actionName, $parameters];
             }
         }
