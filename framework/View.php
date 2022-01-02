@@ -4,8 +4,8 @@ namespace Framework;
 
 class View
 {
-    public static function render($content, $layout, $data = null): void
+    public static function render($layout, $content, $data = null): void
     {
-        include_once APP_VIEWS . $layout;
+        require_once APP_VIEWS . $layout;
     }
 }
