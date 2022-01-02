@@ -7,10 +7,9 @@ use Framework\Router;
 
 class HomeController
 {
-    public function indexAction(): bool
+    public function actionIndex(): bool
     {
-           echo "HomeController ==> indexAction";
-           return true;
-//        View::render('home.php', 'template.php');
+        echo "HomeController ==> actionIndex";
+        return true;
     }
 }

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use PDO;
 use PDOException;
+use Framework\Db;
 
 class ProductModel
 {
@@ -17,23 +18,13 @@ class ProductModel
      * @param  array  $catalog
      * @return array
      */
-    public function getCatalog()
+    public function getCatalog(): array
     {
-        $servername = "localhost";
-        $username = "nix_user";
-        $password = "123";
-
-        try {
-            $conn = new PDO("mysql:host=$servername;dbname=nix_db", $username, $password);
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Connected successfully";
-        } catch (PDOException $e) {
-            echo "Connection failed: ".$e->getMessage();
-        }
+        $db = Db::getConnection();
 
         $catalog = [];
         $sql = 'SELECT id, category, name, description, price, image FROM product';
-        $result = $conn->query($sql);
+        $result = $db->query($sql);
         $i = 0;
         foreach ($result as $row) {
             $catalog[$i]['id'] = $row['id'];
@@ -54,9 +45,15 @@ class ProductModel
      * @return $this
      */
 
-    public function getProductById(int $id)
+    public function getProduct(int $id)
     {
+        if ($id) {
+            $db = Db::getConnection();
+            var_dump($db);
+
+            $sql = 'SELECT * FROM product WHERE id =' . $id;
+            return $db->query($sql)->fetch(PDO::FETCH_ASSOC);
+        }
+
     }
-
-
 }

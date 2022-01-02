@@ -6,11 +6,9 @@ use Framework\View;
 
 class CardController extends Controller
 {
-
     public function actionCard(): bool
     {
         echo "CardController => actionCard";
         return true;
     }
-
 }

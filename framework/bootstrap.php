@@ -2,6 +2,7 @@
 
 use Framework\Router;
 
-require_once __DIR__.'/config.php';
+require_once __DIR__ . '/config.php';
 
-Router::run();
+[$controllerObject, $actionName, $param] = Router::run();
+$result = call_user_func_array([$controllerObject, $actionName], $param);

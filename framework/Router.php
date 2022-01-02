@@ -7,31 +7,32 @@ use App\Controllers\CardController;
 use App\Controllers\HomeController;
 use App\Controllers\ProductController;
 
-
+/**
+ *
+ */
 class Router
 {
     /**
-     * @return void
+     * @return array|null
      */
-    public static function run(): void
+    public static function run(): ?array
     {
         $uri = self::getUri();
         $map = self::getRoutes();
-        self::getController($map, $uri);
+        return self::getController($map, $uri);
     }
 
     /**
-     * @return array
+     * @return \string[][]
      */
     private static function getRoutes(): array
-
     {
         return array(
-            'product/(\w+)(((?!//).)*)' => [ProductController::class, 'actionProduct/$1$2'],
-            'shop' => [ProductController::class, 'actionCatalog'],
-            '' => [HomeController::class, 'indexAction'],
-            'card' => [CardController::class, 'actionCard'],
-            'account' => [AccountController::class, 'actionAccount'],
+            'product/(\w+)(((?!//).)*)' => [ProductController::class, 'product/$1$2'],
+            'shop' => [ProductController::class, 'catalog'],
+            '' => [HomeController::class, 'index'],
+            'card' => [CardController::class, 'card'],
+            'account' => [AccountController::class, 'account'],
         );
     }
 
@@ -47,27 +48,32 @@ class Router
     }
 
     /**
-     * @param  array  $map
-     * @param  string|null  $uri
-     * @return void
+     * @param array $map
+     * @param string|null $uri
+     * @return array|null
      */
-    private static function getController(array $map, ?string $uri): void
+    private static function getController(array $map, ?string $uri): ?array
     {
-        foreach ($map as $route => $controllers) {
-            $pattern = "~^$route$~";
+        foreach ($map as $route => $controller) {
+            $uriPattern = "~^$route$~";
+            if (preg_match($uriPattern, $uri)) {
+                [$controllerName, $action] = $controller;
+                echo '<br>Где ищем (запрос, который набрал пользователь): ' . $uri;
+                echo '<br>Что ищем (совпадение из правила): ' . $uriPattern;
+                echo '<br>Кто обрабатывает: ' . $action;
 
-            if (preg_match($pattern, $uri, $match)) {
-                $controllerName = $controllers[0];
-                $internalRoute = preg_replace($pattern, $controllers[1], $uri);
+                $internalRoute = preg_replace($uriPattern, $action, $uri);
+                var_dump($internalRoute);
+
                 $segments = explode('/', $internalRoute);
-                $controllerAction = array_shift($segments);
+                var_dump($segments);
+                $actionName = 'action' . ucfirst(array_shift($segments));
+                var_dump($actionName);
                 $parameters = $segments;
-                $controller = new $controllerName();
-                $result = call_user_func_array([$controller, $controllerAction], $parameters);
-                if ($result !== null) {
-                    break;
-                }
+                var_dump($parameters);
+                return [new $controllerName(), $actionName, $parameters];
             }
         }
+        return null;
     }
 }

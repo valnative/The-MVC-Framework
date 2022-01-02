@@ -8,7 +8,7 @@ use Framework\View;
 class Controller
 {
     public View $view;
-    public ProductModel $model;
+    public $model;
 
     public function __construct()
     {
