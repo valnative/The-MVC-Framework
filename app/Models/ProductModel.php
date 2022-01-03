@@ -24,7 +24,6 @@ class ProductModel
         $catalog = [];
         $sql = 'SELECT * FROM product';
         $objectArray = $db->query($sql)->fetchAll(PDO::FETCH_CLASS, __CLASS__);
-        var_dump($objectArray);
         foreach ($objectArray as $object) {
             $product = new self();
             $this->extracted($object, $product);
@@ -43,8 +42,6 @@ class ProductModel
             $db = Db::getConnection();
             $sql = 'SELECT * FROM product WHERE id =' . $id;
             $object = $db->query($sql)->fetchObject(__CLASS__);
-            var_dump($object);
-
             $this->extracted($object, $this);
         }
         return $this;

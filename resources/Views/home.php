@@ -5,7 +5,7 @@
       <br>
       <p>This is homepage which is what most visitors will see when they first visit your shop.</p>
       <br>
-      <a class="btn btn-primary btn-welcome" href="shop.html" role="button">Let's shopping</a>
+      <a class="btn btn-primary btn-welcome" href="shop" role="button">Let's shopping</a>
     </div>
   </div>
 </main>

@@ -2,11 +2,11 @@
   <div class="navbar">
     <nav class="navbar navbar-expand-lg navbar-light">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-        <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="shop.html">Shop</a></li>
-        <li><a class="nav-link" href="product.html">Product</a></li>
-        <li><a class="nav-link" href="account.html">My account</a></li>
-        <li><a class="nav-link" href="card.html">Card</a></li>
+        <li><a class="nav-link" href="index">Home</a></li>
+        <li><a class="nav-link" href="shop">Shop</a></li>
+        <li><a class="nav-link" href="product/1">Product</a></li>
+        <li><a class="nav-link" href="account">My account</a></li>
+        <li><a class="nav-link" href="card">Card</a></li>
       </ul>
     </nav>
     <div class="search">
